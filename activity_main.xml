@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contoh_input_text_dan_button"
+        android:textSize="24sp"
+        android:textColor="@color/purple_500"
+        android:layout_marginBottom="16dp"
+        />
+
+    <EditText
+        android:id="@+id/namaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/isi_nama"
+        android:autofillHints="name"
+        android:layout_marginBottom="8dp"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/isi_email"
+        android:minHeight="48dp"
+        android:autofillHints="emailAddress"
+        android:layout_marginBottom="8dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/isi_nomor_hp"
+        android:minHeight="48dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/tanggalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/isi_tanggal"
+        android:minHeight="48dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="creditCardExpirationDate"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/numberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/isi_angka"
+        android:minHeight="48dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        >
+        <Button
+            android:id="@+id/simpanButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/simpan"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginEnd="8dp"
+            android:drawableLeft="@drawable/ic_baseline_save_alt_24"
+            />
+
+        <Button
+            android:id="@+id/batalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/batal"
+            android:backgroundTint="@color/purple_500"
+            android:drawableLeft="@drawable/ic_baseline_cancel_24"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
